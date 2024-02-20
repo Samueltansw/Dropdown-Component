@@ -1,0 +1,54 @@
+.SearchResultList {
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0.5rem 0 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 8px #aaa;
+  max-height: 12rem;
+  overflow-y: scroll;
+}
+
+.SearchResultListItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.SearchResultListItem.active {
+  background-color: rgb(177, 240, 177);
+}
+
+.SearchResultListItem:nth-of-type(2n) {
+  background-color: #bbb;
+}
+
+.SearchResultListItem:nth-of-type(2n + 1) {
+  background-color: #ddd;
+}
+.SearchResultListItem.active {
+  background-color: rgb(177, 240, 177);
+}
+/* .SearchResultListItem:hover {
+  background-color: rgb(177, 240, 177);
+} */
+
+.SearchResultListItem Label {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0;
+}
+
+.SearchResultListItem input {
+  width: max-content;
+}
+
+.SearchResultListItem p {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0;
+}
